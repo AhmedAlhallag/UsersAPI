@@ -1,0 +1,13 @@
+create database db_simple_app ;
+
+use db_simple_app ;
+
+create table registration(
+uid INT PRIMARY KEY auto_increment,
+firstName varchar(20),
+lastName varchar(20),
+gender varchar(20),
+email varchar(20) UNIQUE,
+password varchar(255),
+number INT
+);
